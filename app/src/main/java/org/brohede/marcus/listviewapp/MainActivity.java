@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
 
         String[] rawData = {"Leif", "Ulla", "Kjell"};
         // 2. Create a List object with your array from step 1 as in-data
-        List<String> listData = new ArrayList<String>(Arrays.asList(rawData));
+        List<String> listData = new ArrayList<String>(Arrays.asList(mountainNames));
 
         // 3. Create an ArrayAdapter object that connects
         ArrayAdapter adapter = new ArrayAdapter(getApplicationContext(),R.layout.list_item_textview,R.id.my_item_textview,listData);
 
-        ListView myListView = (ListView)findViewById(R.id.my_item_textview);
+        ListView myListView = (ListView)findViewById(R.id.my_listview);
         myListView.setAdapter(adapter);
         adapter.add("Hilding");
 
