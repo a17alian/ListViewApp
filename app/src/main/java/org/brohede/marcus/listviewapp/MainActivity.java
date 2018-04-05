@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                String toast = "Name: " + mountainNames[position] + '\n' +"Location: " + mountainLocations[position] + '\n' + "Height: " + mountainHeights[0];
+                String toast = "Name: " + mountainNames[position] + '\n' +"Location: " + mountainLocations[position] + '\n' + "Height: " + mountainHeights[position];
                 Toast.makeText(MainActivity.this, toast, Toast.LENGTH_SHORT).show();
             }
         });
